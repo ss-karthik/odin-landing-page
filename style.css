@@ -3,11 +3,37 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header, .intro, .footer {
     color: white;
     background-color: #1f2937;
+}
+
+.headtext {
+    font-size: 24px;
+}
+
+.smalltext {
+    font-size: 18px;
+}
+
+.bigtext {
+    font-size: 48px;
+}
+
+.cardtext {
+    font-size: 36px;
+}
+
+.quotetext {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.boxtitle {
+    font-weight: bold;
 }
 
 .content {
@@ -28,10 +54,37 @@ body {
     gap: 20px;
 }
 
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;   
+}
+
 .intro {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
+    column-gap: 70px;
+}
+
+.introimg {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro button {
+    color: white;
+    background-color: #3882f6;
+    border: none;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .intro.left {
@@ -39,18 +92,40 @@ body {
     flex-direction: column;
     flex-basis: 400px;
     align-items: flex-start;
+    justify-content: center;
+}
+
+.intro .bigtext {
+    margin-bottom: 0;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 200px;
+    margin: 0 100px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #3882f6;
+    object-fit: cover;
 }
 
 .cardlist {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cardlist div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 200px;
+    text-align: center;
 }
 
 
@@ -58,7 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 200px;
+    padding: 70px 200px;
     background-color: #e5e7eb;
 }
 
@@ -68,21 +143,38 @@ body {
 
 .cta {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     background-color: #3882f6;
-    margin: 20px 200px;
+    margin: 40px 200px;
+    border-radius: 5px;
 }
 
 .cta.left {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0;
+    color: white;
+}
+
+.cta.right {
+    margin-right: 0;
 }
 
 .cta.left p {
     padding: 0;
     margin: 0;
+}
+
+.cta button {
+    color: white;
+    background-color: #3882f6;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .footer {
