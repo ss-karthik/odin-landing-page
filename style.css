@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .intro, .footer {
+    color: white;
+    background-color: #1f2937;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro.left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    align-items: flex-start;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 200px;
+}
+
+.cardlist {
+    display: flex;
+    gap: 20px;
+}
+
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 200px;
+    background-color: #e5e7eb;
+}
+
+.author {
+    align-self: flex-end;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    background-color: #3882f6;
+    margin: 20px 200px;
+}
+
+.cta.left {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+}
+
+.cta.left p {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    text-align: center;
+}
